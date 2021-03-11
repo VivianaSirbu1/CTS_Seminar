@@ -41,8 +41,6 @@ public abstract class Aplicant{
 	}
 	
 	
-
-	
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -63,5 +61,8 @@ public abstract class Aplicant{
 		this.nr_proiecte = nr_proiecte;
 		this.denumireProiect= denumireProiecte;
 	}
+	
+	public abstract int getFinantare();
+	
 
 }
