@@ -22,10 +22,11 @@ public abstract class AplicantReader {
 		int varsta = Integer.valueOf(scanner.nextInt());
 		int punctaj = Integer.valueOf(scanner.nextInt());
 		int nr = Integer.valueOf(scanner.nextInt());
-		String[] vect = new String[5];
+		String[] vect = new String[nr];
 		for (int i = 0; i < nr; i++)
 			vect[i] = scanner.next();
 		aplicant.setNume(nume);
+		aplicant.setVarsta(varsta);
 		aplicant.setPrenume(prenume);
 		aplicant.setPunctaj(punctaj);
 		aplicant.setDenumiriProiecte(nr,vect);

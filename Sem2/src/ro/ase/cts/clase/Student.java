@@ -34,10 +34,20 @@ public class Student extends Aplicant {
 	}
 	@Override
 	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(super.toString());
+		builder.append("Facultate=" + facultate);
+		builder.append( ", An_studii=" + an_studii);
 		return "Student: Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect) + "Facultate=" + facultate + ", An_studii=" + an_studii ;
 	}
 	
-
+	public static int getSumaFinantare() {
+		return sumaFinantare;
+	}
+	public static void setSumaFinantare(int sumaFinantare) {
+		Student.sumaFinantare = sumaFinantare;
+	}
+	@Override
 	public int getFinantare() {
 		return sumaFinantare;
 	}
