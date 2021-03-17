@@ -24,7 +24,9 @@ public abstract class AplicantReader {
 		int nr = Integer.valueOf(scanner.nextInt());
 		String[] vect = new String[nr];
 		for (int i = 0; i < nr; i++)
+		{
 			vect[i] = scanner.next();
+		}
 		aplicant.setNume(nume);
 		aplicant.setVarsta(varsta);
 		aplicant.setPrenume(prenume);

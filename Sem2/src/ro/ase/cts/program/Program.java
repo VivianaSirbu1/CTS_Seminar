@@ -10,10 +10,13 @@ import ro.ase.cts.clase.readers.AngajatReader;
 import ro.ase.cts.clase.readers.AplicantReader;
 public class Program {
 
-	public static List<Aplicant> citesteAplicanti(AplicantReader reader) throws FileNotFoundException{
+	public static List<Aplicant> citesteAplicanti(AplicantReader reader) throws FileNotFoundException
+	{
 		return reader.readAplicanti();
 	}
-	public static void main(String[] args) {
+	
+	public static void main(String[] args) 
+	{
 		System.out.println(Angajat.getSumaFinantare());
 		System.out.println(Student.getSumaFinantare());
 		
