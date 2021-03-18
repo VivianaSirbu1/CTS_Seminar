@@ -2,6 +2,7 @@ package ro.ase.cts.program;
 
 import ro.ase.cts.clase.BrokerTranzactie;
 import ro.ase.cts.clase.BrokerTranzactieLazy;
+import ro.ase.cts.clase.Virus;
 
 public class Main {
 
@@ -21,5 +22,10 @@ public class Main {
 		BrokerTranzactieLazy lazy2= BrokerTranzactieLazy.getInstance("Oana",3,78);
 		System.out.println(lazy1.toString());
 		System.out.println(lazy2.toString());
+		
+		Virus virus1= Virus.getInstance("Corona","boală infecțioasă",1,true);
+		Virus virus2= Virus.getInstance("Ebola","boala virala",2,true);
+		System.out.println(virus1.toString());
+		System.out.println(virus2.toString());
 	}
 }

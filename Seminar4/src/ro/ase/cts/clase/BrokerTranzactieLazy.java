@@ -38,8 +38,8 @@ public class BrokerTranzactieLazy {
 		this.vechime = vechime;
 		this.nrTranzactiiEfectuate = nrTranzactiiEfectuate;
 	}
-	
-	public static BrokerTranzactieLazy getInstance(String name, int vechime, int nrTranz) {
+	//CU SYNCHRONIZED THREAD SAFE
+	public static synchronized BrokerTranzactieLazy getInstance(String name, int vechime, int nrTranz) {
 		if( brokerTranzactie==null)
 		{
 			 brokerTranzactie= new BrokerTranzactieLazy(name, vechime, nrTranz);
