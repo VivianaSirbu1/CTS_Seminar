@@ -2,6 +2,7 @@ package ro.ase.ctc.factorymethod.program;
 
 import ro.ase.ctc.factorymethod.clase.AsistentFactory;
 import ro.ase.ctc.factorymethod.clase.FactoryPersonal;
+import ro.ase.ctc.factorymethod.clase.InfirmierFactory;
 import ro.ase.ctc.factorymethod.clase.MedicFactory;
 import ro.ase.ctc.factorymethod.clase.PersonalSpital;
 
@@ -14,5 +15,6 @@ public class Main {
 		printeazaPersonalSpital(new MedicFactory(),"ion");
 		
 		printeazaPersonalSpital(new AsistentFactory(),"Maria");
+		printeazaPersonalSpital(new InfirmierFactory(),"jJJ");
 	}
 }
